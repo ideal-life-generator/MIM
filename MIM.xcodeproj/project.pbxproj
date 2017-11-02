@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E2B910F1FA7E49500B9E903 /* CachedSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B910E1FA7E49500B9E903 /* CachedSong.swift */; };
 		2E2CA5F01FA14AD000586272 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2CA5EF1FA14AD000586272 /* AppDelegate.swift */; };
-		2E2CA5F21FA14AD000586272 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2CA5F11FA14AD000586272 /* ViewController.swift */; };
 		2E2CA5F51FA14AD000586272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2CA5F31FA14AD000586272 /* Main.storyboard */; };
 		2E2CA5F71FA14AD000586272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E2CA5F61FA14AD000586272 /* Assets.xcassets */; };
 		2E2CA5FA1FA14AD000586272 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2CA5F81FA14AD000586272 /* LaunchScreen.storyboard */; };
 		2E2CA6051FA14AD000586272 /* MIMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2CA6041FA14AD000586272 /* MIMTests.swift */; };
 		2E2CA6101FA14AD100586272 /* MIMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2CA60F1FA14AD100586272 /* MIMUITests.swift */; };
+		2E734C351FA65C940001BE8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E734C341FA65C940001BE8C /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E2B910E1FA7E49500B9E903 /* CachedSong.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachedSong.swift; sourceTree = "<group>"; };
 		2E2CA5EC1FA14AD000586272 /* MIM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MIM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2CA5EF1FA14AD000586272 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2E2CA5F11FA14AD000586272 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2E2CA5F41FA14AD000586272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E2CA5F61FA14AD000586272 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E2CA5F91FA14AD000586272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		2E2CA60B1FA14AD100586272 /* MIMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MIMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2CA60F1FA14AD100586272 /* MIMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIMUITests.swift; sourceTree = "<group>"; };
 		2E2CA6111FA14AD100586272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E734C341FA65C940001BE8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				2E2CA5EF1FA14AD000586272 /* AppDelegate.swift */,
-				2E2CA5F11FA14AD000586272 /* ViewController.swift */,
+				2E734C341FA65C940001BE8C /* ViewController.swift */,
+				2E2B910E1FA7E49500B9E903 /* CachedSong.swift */,
 				2E2CA5F31FA14AD000586272 /* Main.storyboard */,
 				2E2CA5F61FA14AD000586272 /* Assets.xcassets */,
 				2E2CA5F81FA14AD000586272 /* LaunchScreen.storyboard */,
@@ -259,8 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E2CA5F21FA14AD000586272 /* ViewController.swift in Sources */,
 				2E2CA5F01FA14AD000586272 /* AppDelegate.swift in Sources */,
+				2E734C351FA65C940001BE8C /* ViewController.swift in Sources */,
+				2E2B910F1FA7E49500B9E903 /* CachedSong.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +431,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_ACTIVITY_MODE = "";
+				"DEBUG_ACTIVITY_MODE[sdk=iphonesimulator*]" = disable;
 				INFOPLIST_FILE = MIM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ideallifegenerator.MIM;
@@ -441,6 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_ACTIVITY_MODE = "";
 				INFOPLIST_FILE = MIM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ideallifegenerator.MIM;
